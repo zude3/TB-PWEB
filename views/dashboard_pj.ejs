@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+<style>
+    .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .btn-primary {
+        background-color: #3498db;
+        color: white;
+    }
+    .btn-primary:hover {
+        background-color: #2980b9;
+    }
+    .btn-logout {
+        background-color: #e74c3c;
+        color: white;
+    }
+    .btn-logout:hover {
+        background-color: #c0392b;
+    }
+    .dashboard-content {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="dashboard-content">
+    <div class="dashboard-header">
+        <h1>Selamat Datang di Dashboard Admin</h1>
+        <div>
+            <a href="/tambah-alat" class="btn btn-primary">Tambah Alat</a>
+            <a href="/logout" class="btn btn-logout">Logout</a>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
